@@ -26,7 +26,6 @@ urlpatterns = [
     path('beats/<int:pk>/update/', AdminBeatUpdateView.as_view(), name='admin-beat-update'),
     path('beats/<int:pk>/delete/', AdminBeatDeleteView.as_view(), name='admin-beat-delete'),
 
-    # Token authentication endpoint
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
 ]
 

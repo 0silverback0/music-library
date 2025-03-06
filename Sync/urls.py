@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),  # Django Admin Panel
     path('api/auth/', include('rest_framework.urls')),  # Login/logout for API
     path('api/admin/', include('admin_api.urls')),  # Admin API
-    # path('api/users/', include('users.urls')),  # Users API
+    path('api/users/', include('users.urls')),  # Users API
 ]
